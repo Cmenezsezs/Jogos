@@ -30,7 +30,7 @@ while (rodada <= total_de_tentativas):
     maior = int(chute) > numero_secreto
     menor = int(chute) < numero_secreto
     rodada = rodada + 1
-    pontos_perdidos = numero_secreto - int(chute)
+    pontos_perdidos = abs(numero_secreto - int(chute))
     pontos = pontos - pontos_perdidos
     if (acertou):
         print("Você acertou! Você fez {} pontos!!!".format(pontos))
