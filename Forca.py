@@ -15,7 +15,7 @@ def jogar():
 
     nivel = int(input("Defina o nível:"))
 
-    if(nivel == 1):
+    if (nivel == 1):
         total_de_tentativas = 20
     elif (nivel == 2):
         total_de_tentativas = 10
@@ -23,9 +23,9 @@ def jogar():
         total_de_tentativas = 3
 
     while (rodada <= total_de_tentativas):
-        print("Tentativa {} de {}".format(rodada,total_de_tentativas))
+        print("Tentativa {} de {}".format(rodada, total_de_tentativas))
         chute = input("Digite o seu número entre 1 e 100:")
-        if(int(chute) < 1 or int(chute) > 100):
+        if (int(chute) < 1 or int(chute) > 100):
             print("Digite o seu número entre 1 e 100:")
             continue
         acertou = numero_secreto == int(chute)
@@ -49,5 +49,3 @@ def jogar():
 
 if(__name__ == "__main__"):
     jogar()
-
-
